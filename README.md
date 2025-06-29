@@ -1,15 +1,15 @@
-# 📰 Rawrporter 🐾
-![Bluesky](https://img.shields.io/badge/Bluesky-0285FF?style=for-the-badge&logo=Bluesky&logoColor=white)![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+# 📰 Dinkum Reporter 🐾
+![Bluesky](https://img.shields.io/badge/Bluesky-0285FF?style=for-the-badge&logo=Bluesky&logoColor=white)![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)![PythonAnywhere](https://img.shields.io/badge/pythonanywhere-%232F9FD7.svg?style=for-the-badge&logo=pythonanywhere&logoColor=151515)
 
-A Python bot that fetches headlines from *The Guardian*'s RSS feed, OwOifies them, and posts the the headlines to Bluesky.
+A Python bot that fetches headlines from the *ABC*'s RSS feed, Aussiefies them, and posts the the headlines to Bluesky.
 
 ![Preview Thumbnail](https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:fth7xvawb23gpzbzpx6clcio/bafkreia6egmguisdeugiir3pvkkq4crtqw4c77ajwuilk4dw74ab7t2lyi@jpeg)
 
 ## ✨ Features
 
-- ✅ Pulls world news from [The Guardian](https://www.theguardian.com/world/rss)
+- ✅ Pulls local news from [The ABC](https://www.abc.net.au/news/feed/10719986/rss.xml)
 - ✅ Filters out sad/violent headlines with a customizable blocklist
-- ✅ Automatically OwOifies the headline text (nya~!)
+- ✅ Automatically aussiefies the headline text (ya drongo)
 - ✅ Adds preview thumbnails and clickable links in Bluesky posts
 - ✅ Avoids reposting already-shared articles
 - ✅ Manual approval step before posting
@@ -21,7 +21,6 @@ A Python bot that fetches headlines from *The Guardian*'s RSS feed, OwOifies the
 
 1. The bot pulls fresh headlines.
 2. Each headline is filtered for inappropriate content.
-3. A headline is OwOified (e.g. "Love" → "Wuv", "R" → "W", etc.).
 4. You get to approve or skip the post.
 5. If approved, the bot posts it to your Bluesky account with a link preview and thumbnail.
 
@@ -46,7 +45,7 @@ A Python bot that fetches headlines from *The Guardian*'s RSS feed, OwOifies the
 1. **Clone the repository**
 
 ```
-   git clone https://github.com/WagonWheelz/Rawrporter.git
+   git clone https://github.com/WagonWheelz/DinkumReporter.git
 ```
 
 2. **Install dependencies**
@@ -86,7 +85,7 @@ A Python bot that fetches headlines from *The Guardian*'s RSS feed, OwOifies the
 | `auto-main.py`      | Main entry point for the bot                   |
 | `main.py`           | Main entry point for the bot                   |
 | `news_fetcher.py`   | Fetches and filters RSS feed headlines         |
-| `owoifier.py`       | Transforms text into OwOified form             |
+| `strayanify.py`     | Transforms text into Aussiefied form           |
 | `bluesky_client.py` | Handles login and posting with embeds          |
 | `posted.txt`        | Tracks posted/skipped links to avoid reposting |
 | `config.py`         | Stores your Bluesky credentials                |
@@ -95,5 +94,5 @@ A Python bot that fetches headlines from *The Guardian*'s RSS feed, OwOifies the
 
 ## 🤖 AI Disclosure
 
-ChatGPT was used to beautify the code and develop some functions. This was my first time making a bot of any kind or code of any kind and used ChatGPT to assist me, I then autopsy each request and learn how it works so I can learn for myself next time. I have taken the code ChatGPT provided and streamlined it (I Think) hwoever it works and there may still be issues. I attempted to create this repo and the readme based on other ones i've seen hwoever I may have gotten part of it wrong, ChatGPT was not used for the creation of this readme file.
+ChatGPT was used in the original code for the OwOify version of this bot. As the code is identical, that also means some aspects may have fingerprints of AI use in them. Please see the disclosure there. ChatGPT was not used for any further additions for this specific bot.
 
