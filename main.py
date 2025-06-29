@@ -1,6 +1,6 @@
 import sys
 from news_fetcher import fetch_news
-from owoifier import owoify
+from strayanify import strayanify
 from bluesky_client import BlueskyClient
 from config import USERNAME, APP_PASSWORD
 
@@ -36,7 +36,7 @@ def main():
             print(f"[Bot] Already posted this article, skipping: {headline}")
             continue
 
-        owoified_text = owoify(headline)
+        owoified_text = strayanify(headline)
         message = f"{owoified_text}"
 
         print("\n--- Draft Post ---")
